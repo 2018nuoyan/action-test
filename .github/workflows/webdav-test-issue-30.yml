@@ -16,4 +16,4 @@ jobs:
           webdav_username: ${{secrets.webdav_u}}
           webdav_password: ${{secrets.webdav_p}}
           webdav_upload_path: '/ulster-search/profiles/ulster-search/profiles/_default/preview/templates'
-          files: "${{ env.FIRMWARE }}/*.ftl"
+          files: ${{ env.FIRMWARE }}/*.ftl
