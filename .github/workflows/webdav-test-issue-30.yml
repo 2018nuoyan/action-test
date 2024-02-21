@@ -1,6 +1,8 @@
 name: webdav-test-issue-30
 
 on: workflow_dispatch
+env:
+  FIRMWARE: "./staging/ulster-search/ftl/"
 
 jobs:
   deplay_to_staging:
@@ -14,4 +16,4 @@ jobs:
           webdav_username: ${{secrets.webdav_u}}
           webdav_password: ${{secrets.webdav_p}}
           webdav_upload_path: '/ulster-search/profiles/ulster-search/profiles/_default/preview/templates'
-          files: "./staging/ulster-search/ftl/*.ftl"
+          files: "${{ env.FIRMWARE }}/*.ftl"
