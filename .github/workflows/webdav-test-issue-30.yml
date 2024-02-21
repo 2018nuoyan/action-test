@@ -2,7 +2,7 @@ name: webdav-test-issue-30
 
 on: workflow_dispatch
 env:
-  FIRMWARE: "./staging/ulster-search/ftl/"
+  FIRMWARE: "./staging/ulster-search/ftl"
 
 jobs:
   deplay_to_staging:
